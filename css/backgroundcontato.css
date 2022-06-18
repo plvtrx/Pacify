@@ -1,0 +1,78 @@
+/* tela para computador */
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body{
+    background-image: url(../imagem/computador.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    }
+
+/* tela para tablet */
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 0;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background-image: url(../imagem/tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+    }
+}
+
+@keyframes animation {
+    0% {background-image: url(../imagem/travou.gif);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+    50% {background-image: url(../imagem/chi.gif);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+    100% {background-image: url(../imagem/fogo.gif);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}   
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1.h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/* tela para mobile */
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 0;
+}
+
+@media screen and (max-width: 425px) {
+    body{
+        background-image: url(../imagem/mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+    }
+}

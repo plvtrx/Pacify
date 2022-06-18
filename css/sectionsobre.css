@@ -1,0 +1,179 @@
+.container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+
+    margin-top: 50px;
+
+    /* border: 1px solid #fff; */
+
+    display: grid;
+    grid-gap: 10px;
+
+    justify-content: center;
+
+    grid-template-areas: 
+    "frente item"
+    "frente item"
+    "frente item"
+    "frente item"
+    "frente item"
+    "frente item"
+    "frente item"
+    "footer footer";
+}
+
+strong {
+    color: brown;
+}
+
+p {
+    color: white;
+    padding-top: 10px;
+}
+
+img{
+    width: 100%;
+
+    border-radius: 20px;
+}
+
+.item {
+    max-width: 500px;
+    min-width: 300px;
+    height: 300px;
+
+    background-color: #333;
+    border-radius: 20px;
+    grid-area: "item";
+    grid-column: item;
+}
+
+.frente {
+    max-width: 500px;
+    min-width: 300px;
+    height: 300px;
+
+    background-color: #0D0D0D;
+    border-radius: 20px;
+    grid-area: "frente";
+    grid-row: frente;
+}
+
+.footer {
+    width: auto;
+    height: 300px;
+
+    background-color: #0D0D0D;
+    border-radius: 20px;
+    grid-area: "footer";
+    grid-column: footer;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+        "frente item"
+        "frente item"
+        "frente item"
+        "frente item"
+        "frente item"
+        "frente item"
+        "frente item"
+        "footer footer";
+    }
+
+    .sidenav {
+        max-width: 300px;
+        min-width: 250px;
+        height: 1870px;
+    
+        background-color: #333;
+        border-radius: 20px;
+        grid-area: "sidenav";
+        grid-row: sidenav;
+    }
+}
+
+@media (max-width: 580px) {
+    .container {
+        grid-template-areas: 
+        "frente" 
+        "item"
+        "frente" 
+        "item"
+        "frente" 
+        "item"
+        "frente" 
+        "item"
+        "frente" 
+        "item"
+        "frente" 
+        "item"
+        "frente" 
+        "item"
+        "footer";
+    }
+
+    .sidenav {
+        max-width: 400px;
+        min-width: 350px;
+        height: 925px;
+    
+        background-color: #333;
+        border-radius: 20px;
+        grid-area: "sidenav";
+        grid-row: sidenav;
+    }
+}
+ 
+@media (max-width: 425px) {
+    .container {
+        grid-template-areas: 
+        "frente"
+        "frente" 
+        "frente"
+        "frente" 
+        "frente" 
+        "frente" 
+        "frente" 
+        "footer";
+    }
+}
+
+@media (max-width: 340px) {
+    .container {
+        grid-template-areas: 
+        "frente" 
+        "frente" 
+        "frente" 
+        "frente" 
+        "frente"
+        "frente"    
+        "frente" 
+        "footer";
+    }
+
+    .sidenav {
+        max-width: 300px;
+        min-width: 250px;
+        height: 925px;
+    
+        background-color: #333;
+        border-radius: 20px;
+        grid-area: "sidenav";
+        grid-row: sidenav;
+    }
+
+    .item {
+        max-width: 400px;
+        min-width: 200px;
+        height: 300px;
+    
+        background-color: #333;
+        border-radius: 20px;
+        grid-area: "item";
+    }
+}

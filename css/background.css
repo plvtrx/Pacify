@@ -1,0 +1,51 @@
+/* tela para computador */
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body{
+    background-image: url(../imagem/computador.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    }
+
+/* tela para tablet */
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 0;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background-image: url(../imagem/tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+    }
+}
+
+/* tela para mobile */
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 0;
+}
+
+@media screen and (max-width: 425px) {
+    body{
+        background-image: url(../imagem/mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+    }
+}

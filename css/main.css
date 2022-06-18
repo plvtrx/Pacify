@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.video {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    position: relative;
+    padding-bottom: 50%;
+}
+
+div.video iframe{
+    position: absolute;
+    top: 75px;
+    height: 80% ;
+    width:80% ;
+}
+
+@keyframes animation {
+    0% {background-image: url(../imagem/travou.gif);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+    50% {background-image: url(../imagem/chi.gif);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+    100% {background-image: url(../imagem/mulher.gif);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}   
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1.h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
